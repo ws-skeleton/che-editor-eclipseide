@@ -20,5 +20,5 @@ containers:
          name: plugins
        - mountPath: "/projects"
          name: projects
-    ports:
+   ports:
        - exposedPort: 3000
