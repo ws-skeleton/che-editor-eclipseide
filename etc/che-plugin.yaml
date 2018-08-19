@@ -1,14 +1,17 @@
 version: 1.0.0
 type: Che Editor
-name: org.eclipse.che.editor.theia
-id: theia-ide
+name: theia-ide
+id: org.eclipse.che.editor.theia
 title: Eclipse Theia for Eclipse Che
 Description: Eclipse Theia
 Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
 endpoints:
- -  name: "ide"
+ -  name: "theia"
     public: true
     targetPort: 3000
+    attributes:
+      protocol: http
+      type: ide
 containers:
  - name: theia-ide
    image: eclipse/che-theia:0.3.13-nightly
