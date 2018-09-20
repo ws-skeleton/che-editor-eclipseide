@@ -25,3 +25,4 @@ containers:
          name: projects
    ports:
        - exposedPort: 3000
+   memory-limit: "512M"
