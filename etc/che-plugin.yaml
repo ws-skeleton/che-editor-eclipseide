@@ -12,6 +12,12 @@ endpoints:
     attributes:
       protocol: http
       type: ide
+ -  name: "theia-dev"
+    public: true
+    targetPort: 3030
+    attributes:
+      protocol: http
+      type: ide-dev
 containers:
  - name: theia-ide
    image: eclipse/che-theia:0.3.14-nightly
@@ -25,4 +31,5 @@ containers:
          name: projects
    ports:
        - exposedPort: 3000
+       - exposedPort: 3030
    memory-limit: "512M"
