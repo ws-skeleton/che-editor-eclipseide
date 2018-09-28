@@ -12,6 +12,8 @@ endpoints:
     attributes:
       protocol: http
       type: ide
+      secure: true
+      cookiesAuthEnabled: true
  -  name: "theia-dev"
     public: true
     targetPort: 3030
