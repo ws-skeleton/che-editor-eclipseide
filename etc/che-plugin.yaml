@@ -8,7 +8,7 @@ Icon: https://github.com/eclipse/eclipse.platform/raw/master/platform/org.eclips
 endpoints:
  -  name: "eclipse-ide"
     public: true
-    targetPort: 80
+    targetPort: 5000
     attributes:
       protocol: http
       type: ide
@@ -16,10 +16,10 @@ endpoints:
       cookiesAuthEnabled: true
 containers:
  - name: eclipse-ide
-   image: sopotc/eclipse-broadway
+   image: wsskeleton/eclipse-broadway
    volumes:
        - mountPath: "/projects"
          name: projects
    ports:
-       - exposedPort: 80
+       - exposedPort: 5000
    memory-limit: "2048M"
