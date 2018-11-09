@@ -12,8 +12,6 @@ endpoints:
     attributes:
       protocol: http
       type: ide
-      secure: true
-      cookiesAuthEnabled: true
 containers:
  - name: eclipse-ide
    image: wsskeleton/eclipse-broadway
