@@ -3,8 +3,8 @@ type: Che Editor
 name: eclipse-ide
 id: org.eclipse.che.editor.eclipseide
 title: Eclipse IDE for Eclipse Che
-Description: Eclipse IDE
-Icon: https://github.com/eclipse/eclipse.platform/raw/master/platform/org.eclipse.sdk/eclipse256.png
+description: Eclipse IDE
+icon: https://github.com/eclipse/eclipse.platform/raw/master/platform/org.eclipse.sdk/eclipse256.png
 endpoints:
  -  name: "eclipse-ide"
     public: true
@@ -21,3 +21,4 @@ containers:
    ports:
        - exposedPort: 5000
    memory-limit: "2048M"
+   memoryLimit: "2048M"
